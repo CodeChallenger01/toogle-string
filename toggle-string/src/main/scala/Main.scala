@@ -1,4 +1,3 @@
-import java.util.InputMismatchException
 import scala.io.StdIn.readLine
 
 class ToggleString {
@@ -11,14 +10,14 @@ class ToggleString {
 
       //converting uppercase to lowercase
       if (asciiValue >= 65 && asciiValue <= 90) {
-        val toUpperCase: Char = (asciiValue + 32).asInstanceOf[Char]
-        afterToggleString+=toUpperCase
+        val toLowerCase: Char = (asciiValue + 32).asInstanceOf[Char]
+        afterToggleString+=toLowerCase
       }
 
         //converting lowercase to uppercase
       else if (asciiValue >= 97 && asciiValue <= 122) {
-        val toLowerCase: Char = (asciiValue - 32).asInstanceOf[Char]
-        afterToggleString+=toLowerCase
+        val toUpperCase: Char = (asciiValue - 32).asInstanceOf[Char]
+        afterToggleString+=toUpperCase
       }
     }
     return afterToggleString
